@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 taskList.removeChild(newTask);
             });
 
-            newTask.appendChild(removeButton);
+                newTask.appendChild(removeButton);
 
             taskList.appendChild(newTask);
 
@@ -62,6 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 };
+
+addButton.addEventListener('click', addTask());
 });
 
 console.log('java script is working');
