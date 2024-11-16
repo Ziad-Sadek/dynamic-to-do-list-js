@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
         });
 
-    })
+    });
 
-    addButton.addEventListener('click', addTask());
+    addButton.addEventListener('click', function(){ addTask()});
 
     //To add a task when pressing enter:
     taskInput.addEventListener('keypress', function(event) {
