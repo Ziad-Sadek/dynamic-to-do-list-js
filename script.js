@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const taskInput = document.getElementById('task-input');
     const taskList = document.getElementById('task-list');
 
+    loadTasks();
+
     function addTask() {
 
         const taskText = taskInput.value.trim();
@@ -30,6 +32,25 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             alert("Please Enter a Task!");
         }
+    }
+
+    function loadTasks() {
+
+        let tasks = JSON.parse(localStorage.getItem('tasks') || '[]');
+
+        tasks.forEach(taskText => {
+            const newTask = document.createElement('li');
+            newTask.textContent = taskText;
+
+            const removeButton = document.createElement('button');
+            removeButton.textContent = "Remove";
+            removeButton.classList.add('remove-btn');
+            removeButton.addEventListener('click', function() {
+                taskList.removeChild(newTask);
+               
+            
+        });
+
     }
 
     addButton.addEventListener('click', addTask());
