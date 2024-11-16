@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
         });
 
-    }
+    })
 
     addButton.addEventListener('click', addTask());
 
@@ -61,4 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             addTask();
         }
     });
+};
 });
+
+console.log('java script is working');
