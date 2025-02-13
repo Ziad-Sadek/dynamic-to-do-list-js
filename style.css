@@ -8,6 +8,7 @@ body {
     margin: 0;
 }
 
+
 #todo-app {
     width: 100%;
     max-width: 400px;
@@ -18,7 +19,7 @@ body {
 }
 
 #task-input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -26,7 +27,7 @@ body {
 }
 
 #add-task-btn {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     background-color: #007bff;
     color: white;
@@ -65,4 +66,15 @@ li {
 
 .remove-btn:hover {
     background-color: #d9534f;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #555;
 }
